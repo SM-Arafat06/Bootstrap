@@ -1,22 +1,46 @@
 #grid-container-2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    grid-template-rows: repeat(3, 200px);  /* 3 equal rows */
-    grid-template-areas: 
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns */
+    grid-template-rows: repeat(3, 200px);
+    /* 3 equal rows */
+    grid-template-areas:
         "ax ax bx cx"
         "dx dx ex cx"
-        "fx fx ex gx"
+        "dx dx ex fx";
     gap: 10px;
-  }
+}
 
-  #grid-container-2 img {
+#grid-container-2 img {
     height: 100%;
     width: 100%;
-  }
+}
 
-   .ax { grid-area: ax; }
-.bx { grid-area: bx; }
-.cx { grid-area: cx; }
-.dx { grid-area: dx; }
-.ex { grid-area: ex; }
-.fx { grid-area: fx; }
+.ax {
+    grid-area: ax;
+}
+
+.bx {
+    grid-area: bx;
+}
+
+.cx {
+    grid-area: cx;
+}
+
+.dx {
+    grid-area: dx;
+}
+
+.ex {
+    grid-area: ex;
+}
+
+.fx {
+    grid-area: fx;
+}
+
+.translate-top-10{
+    transform: translateY(-30%);
+    z-index: -10;
+}
